@@ -3,10 +3,10 @@
 
     <HorizontalLayout childAlignment ="UpperCenter"  width = "700" height ="800" childForceExpandWidth="true" >
         <VerticalLayout preferredWidth ="300">
-            <InputField id ="magic_name" onValueChanged="Global/onResearch" onEndEdit="Global/onSubmitToAPI">Name your magic</InputField> 
+            <InputField id ="magic_name" onValueChanged="Global/onResearch" >Name it!</InputField> 
             
             <VerticalScrollView preferredHeight="300">
-                <Panel height = "1200">
+                <Panel height = "2600">
                 <GridLayout cellsize ="110 110" childAlignment="UpperCenter">
 
                         $options_toggles
@@ -20,7 +20,7 @@
 
         <VerticalScrollView id="final_result" preferredWidth="400"  preferredHeight="800" color = "#FFFFFF">
             
-            <VerticalLayout alignment="UpperLeft" height="1200">
+            <VerticalLayout alignment="UpperLeft" height="4000">
 
                 <Text alignment="UpperLeft" fontSize="24" id ="magic_description">No magic</Text>
            
@@ -28,15 +28,16 @@
 
         </VerticalScrollView>
 
-        <!-- <VerticalScrollView  id ="searching_list">
+        <VerticalScrollView  id ="searching_list">
 
-            <TableLayout preferredWidth="400" >
-
+            <!-- <TableLayout preferredWidth="400" > -->
+            <VerticalLayout>
             $new_row
+            </VerticalLayout>
 
-            </TableLayout>
+            <!-- </TableLayout> -->
 
-        </VerticalScrollView> -->
+        </VerticalScrollView>
         
     </HorizontalLayout>
 
