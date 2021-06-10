@@ -67,6 +67,7 @@ function makeConnection(value)
 
     currentMagic = JSON.decode(ri.text)
     overrideToggles(currentMagic)
+    UI.setAttribute('magic_description', 'text', "Please select inputs on the left panel")
      end)
 end
 
